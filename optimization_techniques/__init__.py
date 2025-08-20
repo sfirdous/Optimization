@@ -1,2 +1,3 @@
-from .class_a import ClassA
-from .class_b import ClassB
+from .deterministic_optimization import DeterministicOptimization 
+
+from .stochastic_optimization import StochasticOptimization 
