@@ -17,6 +17,20 @@ def TotalDistance(P,seq):
     
     return dist
 
+def Plot(P, seq, dist, PNames):
+    Pt = [P[seq[i]] for i in range(len(seq))]
+    Pt += [P[seq[0]]]  # close the loop
+    Pt = array(Pt)
+
+    title("Total Distance : " + str(dist))
+    plot(Pt[:,0], Pt[:,1], '-o')
+
+    for i in range(len(P)):
+        annotate(PNames[i], (P[i][0], P[i][1]))
+
+    show()
+ 
+ 
 
 def readcities(PNames):
 	P = []  # coordinates of cities
