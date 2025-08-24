@@ -45,10 +45,13 @@ def readcities(PNames):
 			if(city == ""):
 				break
 			
-			city += ", India"
-			pt = geolocator.geocode(city,timeout = 10000)
+			location += ", India"
+			pt = geolocator.geocode(location,timeout = 10000)
+			x = round(pt.longitude,2)
+			y = round(pt.latitude,2)
 			print("City = ", city,pt.latitude,pt.longitude)
-			P.insert(j,[pt.latitude,pt.longitude])
+			P.insert(j,[x,y])
+			PNames.insert(j,city)
 			j += 1
 	return P
 
