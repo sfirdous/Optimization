@@ -1,1 +1,3 @@
-class 
+from .deterministic_optimization import DeterministicOptimization 
+
+from .stochastic_optimization import StochasticOptimization 
