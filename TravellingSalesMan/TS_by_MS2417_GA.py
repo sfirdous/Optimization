@@ -118,7 +118,7 @@ class GeneticAlgorithmTSP:
 def readcities():
     cities = []
     geolocator = Nominatim(user_agent="fss_app")
-    with open("India_cities.txt") as file:
+    with open("India_cities_GA.txt") as file:
         for line in file:
             city = line.strip()
             if not city:
