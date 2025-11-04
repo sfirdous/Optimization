@@ -201,7 +201,7 @@ def readcities(filename):
 # Main execution
 if __name__ == "__main__":
     print("Reading cities from India_cities.txt...")
-    cities = readcities("D:\Optimization\TravellingSalesMan\India_cities.txt")
+    cities = readcities("India_cities.txt")
     
     if len(cities) < 2:
         print("Error: Need at least 2 cities to solve TSP!")
